@@ -1,0 +1,72 @@
+$xs-screen: 480px;
+$sm-screen: 720px;
+$md-screen: 980px;
+$lg-screen: 1366px;
+$xl-screen: 1920px;
+
+@mixin xs-mobile {
+  @media (max-width: #{$xs-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$sm-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$md-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$lg-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$xl-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: #{$xl-screen - 0.1px}) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+// $points: (
+//   "phone-small": 366px,
+//   "phone": 415px,
+//   "phone-wide": 480px,
+//   "phablet": 560px,
+//   "tablet-small": 640px,
+//   "tablet": 768px,
+//   "tablet-wide": 1024px,
+//   "desktop": 1248px,
+//   "desktop-wide": 1440px,
+//   "desktop": 1650px
+// );
+
+// @mixin mq($width, $type: min) {
+//   @if map_has_key($points, $width) {
+//     $width: map_get($points, $width);
+//     @if $type == max {
+//       $width: $width - 1px;
+//     }
+//     @media only screen and (#{$type}-width: $width) {
+//       @content;
+//     }
+//   }
+// }

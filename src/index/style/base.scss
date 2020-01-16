@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import "./style/_vars.scss";
+
+html {
+  font-family: $default-font;
+  font-size: $base-font;
+  color: $text-light;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background-color: green;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+nav {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 44px;
+  position: fixed;
+  padding: 0 1rem;
+  z-index: 3;
+}
+
+.section {
+  width: 100%;
+  min-height: 150px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.section__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+}
