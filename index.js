@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Object(_app_jsx__WEBPACK_IMPORTED_MODULE_1__["run"])();
-console.log('!!HELTH CHECK!!');
+console.log("!!HELTH CHECK!!");
 
 /***/ }),
 
