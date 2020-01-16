@@ -12,6 +12,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 .img-responsive {
@@ -54,7 +55,7 @@ nav {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  max-width: 960px;
+  max-width: 1140px;
   position: relative;
   display: flex;
   -ms-flex-direction: column;
