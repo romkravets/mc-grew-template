@@ -136,7 +136,7 @@
   }
   &_contact {
     text-align: center;
-    width: 80%;
+    width: 60%;
     margin: 1rem 0 2rem 0;
   }
 }
@@ -190,5 +190,18 @@
   }
   &::after {
     opacity: 0.32;
+  }
+}
+
+.btn_blue {
+  background-color: $accent-color-blue;
+  &::after {
+    background-color: darken($accent-color-blue, 50%);
+  }
+  &:hover {
+    background-color: lighten($accent-color-blue, 5%);
+  }
+  &:active {
+    background-color: darken($accent-color-blue, 5%);
   }
 }
