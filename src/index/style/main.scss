@@ -114,7 +114,7 @@
   }
   &_support {
     background: rgb(27, 151, 197);
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   &_team {
     background: rgb(54, 122, 183);
@@ -124,10 +124,19 @@
 .support {
   &__carousel {
     position: absolute;
-    bottom: -56px;
+    bottom: -76px;
     width: 700px;
     height: 500px;
     background-color: green;
+  }
+}
+
+.team {
+  &__one {
+    width: 50%;
+  }
+  &__two {
+    width: 50%;
   }
 }
 
