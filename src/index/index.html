@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
 </head>
 
@@ -73,7 +79,15 @@
         <div class="section__content support">
             <img src="../../assets/images/overlay-carousel.png"></img>
             <div class="support__carousel">
-                Carousel
+              <div
+                class="fotorama"
+                data-autoplay="true"
+                data-arrows="false"
+                data-loop="true"
+                >
+                <img src="../../assets/images/slide.png">
+                <img src="../../assets/images/slide.png">
+              </div>
             </div>
         </div>
     </section>
@@ -90,5 +104,10 @@
             </div>
         </div>
     </section>
-
+    <script>
+      $('.fotorama').fotorama({
+        nav: 'false'
+      });
+    </script>
+</body>
 </html>
