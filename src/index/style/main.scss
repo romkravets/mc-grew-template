@@ -112,6 +112,23 @@
     padding: 2rem 0;
     color: $text-dark;
   }
+  &_support {
+    background: rgb(27, 151, 197);
+    margin-bottom: 100px;
+  }
+  &_team {
+    background: rgb(54, 122, 183);
+  }
+}
+
+.support {
+  &__carousel {
+    position: absolute;
+    bottom: -56px;
+    width: 700px;
+    height: 500px;
+    background-color: green;
+  }
 }
 
 .title {
