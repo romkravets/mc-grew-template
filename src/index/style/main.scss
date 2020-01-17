@@ -132,11 +132,25 @@
 }
 
 .team {
+  flex-direction: row;
   &__one {
-    width: 50%;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    position: relative;
+    //width: 50%;
   }
   &__two {
-    width: 50%;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    //width: 50%;
   }
 }
 
