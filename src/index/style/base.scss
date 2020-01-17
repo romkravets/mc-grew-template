@@ -26,40 +26,26 @@ body {
 
 nav {
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
   height: 44px;
   position: fixed;
-  padding: 0 1rem;
+  //padding: 0 1rem;
   z-index: 3;
 }
 
-.section {
-  width: 100%;
-  min-height: 150px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  padding: 0 1rem;
-  z-index: 2;
-}
-
 .section__content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
+  // display: -ms-flexbox;
+  // display: flex;
+  // -ms-flex-pack: center;
+  // justify-content: center;
   width: 100%;
   max-width: 1140px;
   position: relative;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
+  // display: flex;
+  // -ms-flex-direction: column;
+  // flex-direction: column;
+  // -ms-flex-align: center;
+  // align-items: center;
 }
