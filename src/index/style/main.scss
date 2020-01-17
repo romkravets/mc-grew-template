@@ -167,3 +167,14 @@
     opacity: 0.32;
   }
 }
+
+.section-partners {
+  display: flex;
+  min-height: 100px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
