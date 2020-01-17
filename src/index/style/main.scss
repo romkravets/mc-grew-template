@@ -92,6 +92,26 @@
   &_header-content {
     display: block;
   }
+  &_partners {
+    display: flex;
+    min-height: 100px;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+  &_age {
+    background-color: $blue-color;
+    text-align: center;
+    padding: 3rem 0 0 0;
+  }
+  &_contact {
+    padding: 2rem 0;
+    color: $text-dark;
+  }
 }
 
 .title {
@@ -113,6 +133,11 @@
   &_header {
     margin: 0 0 3rem 0;
     @include text-shadow;
+  }
+  &_contact {
+    text-align: center;
+    width: 80%;
+    margin: 1rem 0 2rem 0;
   }
 }
 
@@ -166,21 +191,4 @@
   &::after {
     opacity: 0.32;
   }
-}
-
-.section-partners {
-  display: flex;
-  min-height: 100px;
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-}
-
-.section-age {
-  background-color: $blue-color;
-  text-align: center;
-  padding: 3rem 0 0 0;
 }
