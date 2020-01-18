@@ -149,6 +149,9 @@
 
 .team {
   flex-direction: row;
+  @include tablet {
+    flex-direction: column;
+  }
   &_parts {
     flex-grow: 0;
     flex-shrink: 0;
@@ -156,6 +159,11 @@
     position: relative;
     padding: 0 2rem;
     //width: 50%;
+    @include tablet {
+      flex-shrink: 1;
+      width: 100%;
+      text-align: center;
+    }
   }
   &_desctiption-italic {
     font-style: italic;
@@ -173,6 +181,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @include tablet {
+      background-position: initial;
+    }
   }
 }
 
