@@ -28,6 +28,14 @@
     color: $text-dark;
     text-align: center;
     text-transform: uppercase;
+    display: inline-block;
+    line-height: 86px;
+    height: 100%;
+    border-bottom: 4px solid transparent;
+    &:hover {
+      border-bottom: 4px solid #00b5d2;
+      color: $text-light;
+    }
   }
 }
 
