@@ -89,6 +89,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
   &_header {
     background-image: url(../../assets/images/bg-header.png);
@@ -156,8 +157,11 @@
     padding: 0 2rem;
     //width: 50%;
   }
+  &_desctiption-italic {
+    font-style: italic;
+  }
   &_desctiption {
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
     padding-right: 6rem;
   }
   &__one {
@@ -172,6 +176,56 @@
   }
 }
 
+.footer {
+  padding: 0;
+  text-align: center;
+  &__line {
+    width: 100%;
+    border-top: 2px solid #cccccc;
+    margin: 3rem 0 0 0;
+    padding: 0;
+  }
+  &__rectangle {
+    img {
+      padding: 0 2rem;
+    }
+  }
+  &__address {
+    color: $text-dark;
+    margin: 3rem 0 0 0;
+  }
+  &__phone {
+    margin: 1rem 0;
+    color: $text-dark;
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+  }
+  &__email {
+    color: $accent-color;
+    text-decoration: none;
+    font-style: normal;
+  }
+}
+
+.copyright {
+  margin-top: 4rem;
+  color: $text-dark;
+  border-top: 1px solid #f2f2f2;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  &:hover {
+    border-bottom: none;
+    color: $text-dark;
+  }
+}
+
 .title {
   font-size: 48px;
   font-weight: 900;
@@ -183,6 +237,9 @@
   &_header {
     margin: 4rem 0 2rem 0;
     @include text-shadow;
+  }
+  &_team {
+    margin: 0;
   }
 }
 
