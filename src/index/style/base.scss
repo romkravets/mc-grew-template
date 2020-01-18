@@ -30,22 +30,7 @@ nav {
   -ms-flex-pack: center;
   justify-content: center;
   height: 44px;
-  position: fixed;
+  position: absolute;
   //padding: 0 1rem;
   z-index: 3;
-}
-
-.section__content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1140px;
-  position: relative;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
 }

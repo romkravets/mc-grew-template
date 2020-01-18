@@ -6,13 +6,20 @@
   justify-content: space-evenly;
   align-items: center;
   height: 110px;
+  &__logo {
+    display: inline-block;
+    width: 80%;
+  }
+  &__logo-img {
+    width: 80%;
+  }
   &__content {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1140px;
-    //margin: 0 auto;
+    padding: 0 1rem;
   }
   &__items {
     display: flex;
@@ -28,6 +35,14 @@
     color: $text-dark;
     text-align: center;
     text-transform: uppercase;
+    display: inline-block;
+    line-height: 86px;
+    height: 100%;
+    border-bottom: 4px solid transparent;
+    &:hover {
+      border-bottom: 4px solid #00b5d2;
+      color: $text-light;
+    }
   }
 }
 
@@ -65,18 +80,16 @@
   padding: 0 1rem;
   z-index: 2;
   &__content {
-    // display: -ms-flexbox;
-    // display: flex;
-    // -ms-flex-pack: center;
-    // justify-content: center;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
     max-width: 1140px;
     position: relative;
-    // display: flex;
-    // -ms-flex-direction: column;
-    // flex-direction: column;
-    // -ms-flex-align: center;
-    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
   }
   &_header {
     background-image: url(../../assets/images/bg-header.png);
@@ -87,7 +100,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 7rem 0;
+    padding: 7rem 1rem;
   }
   &_header-content {
     display: block;
@@ -121,36 +134,95 @@
   }
 }
 
+.age-img {
+  position: relative;
+  top: 11px;
+  padding-top: 5rem;
+}
+
 .support {
   &__carousel {
     position: absolute;
     bottom: -76px;
-    // width: 700px;
-    // height: 500px;
-    // background-color: green;
   }
 }
 
 .team {
   flex-direction: row;
-  &__one {
-    -ms-flex-positive: 0;
+  &_parts {
     flex-grow: 0;
-    -ms-flex-negative: 0;
     flex-shrink: 0;
-    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     position: relative;
+    padding: 0 2rem;
     //width: 50%;
   }
-  &__two {
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    //width: 50%;
+  &_desctiption-italic {
+    font-style: italic;
+  }
+  &_desctiption {
+    margin: 1rem 0 2rem 0;
+    padding-right: 6rem;
+  }
+  &__one {
+    background-image: url("../../assets/images/team.png");
+    min-height: 450px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  padding: 0;
+  text-align: center;
+  &__line {
+    width: 100%;
+    border-top: 2px solid #cccccc;
+    margin: 3rem 0 0 0;
+    padding: 0;
+  }
+  &__rectangle {
+    img {
+      padding: 0 2rem;
+    }
+  }
+  &__address {
+    color: $text-dark;
+    margin: 3rem 0 0 0;
+  }
+  &__phone {
+    margin: 1rem 0;
+    color: $text-dark;
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+  }
+  &__email {
+    color: $accent-color;
+    text-decoration: none;
+    font-style: normal;
+  }
+}
+
+.copyright {
+  margin-top: 4rem;
+  color: $text-dark;
+  border-top: 1px solid #f2f2f2;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  &:hover {
+    border-bottom: none;
+    color: $text-dark;
   }
 }
 
@@ -165,6 +237,9 @@
   &_header {
     margin: 4rem 0 2rem 0;
     @include text-shadow;
+  }
+  &_team {
+    margin: 0;
   }
 }
 
