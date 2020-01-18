@@ -1,94 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="http://localhost:35729/livereload.js"></script>
-<link href="./index.css" rel="stylesheet"></head>
+    <title>McGREW</title>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<body>
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="http://localhost:35729/livereload.js"></script>
+  <link href="./index.css" rel="stylesheet"></head>
+
+  <body>
     <nav class="global-nav">
-        <div class="global-nav__content">
-            <a clsss="global-nav__logo" href="#"><img src="./assets/images/logo.png" alt=""></a>
-            <div class="global-nav__burger burger">
-                <span class="burger__raw"></span>
-                <span class="burger__raw"></span>
-            </div>
-            <ul class="global-nav__items">
-                <li class="global-nav__item"><a class="global-nav__link" href="#">Home</a></li>
-                <li class="global-nav__item"><a class="global-nav__link" href="#">About us</a></li class="nav__item">
-                <li class="global-nav__item"><a class="global-nav__link" href="#">Contact</a></li>
-            </ul>
+      <div class="global-nav__content">
+        <a clsss="global-nav__logo" href="#">
+          <img
+            class="global-nav__logo-img"
+            src="./assets/images/logo.png"
+            alt=""
+        /></a>
+
+        <div class="global-nav__burger burger">
+          <span class="burger__raw"></span>
+          <span class="burger__raw"></span>
         </div>
+        <ul class="global-nav__items">
+          <li class="global-nav__item">
+            <a class="global-nav__link" href="https://www.google.com.ua/"
+              >Home</a
+            >
+          </li>
+          <li class="global-nav__item">
+            <a class="global-nav__link" href="https://www.google.com.ua/"
+              >About us</a
+            >
+          </li>
+          <li class="global-nav__item">
+            <a class="global-nav__link" href="https://www.google.com.ua/"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <section class="section section_header">
-        <div class="section__content section_header-content">
-            <div class="section__title-block">
-                <h1 class="title title_header">We can <span class="title_botton-line active-blue-line"> help.</span></h1>
-                <p class="desctiption desctiption_header">Teaching independence to the lives of the people you love with
-                    <br> reliable, individualized emotional and behavioral therapy.</p>
-                <button class="btn">FIND HELP HERE</button>
-            </div>
+      <div class="section__content section_header-content">
+        <div class="section__title-block">
+          <h1 class="title title_header">
+            We can
+            <span class="title_botton-line active-blue-line"> help.</span>
+          </h1>
+          <p class="desctiption desctiption_header">
+            Teaching independence to the lives of the people you love with
+            <br />
+            reliable, individualized emotional and behavioral therapy.
+          </p>
+          <button class="btn">FIND HELP HERE</button>
         </div>
+      </div>
     </section>
     <section class="section section_partners">
-        <div class="section__content section_partners__content">
-            <div>
-                <img src="./assets/images/magellan.png">
-            </div>
-            <div>
-                <img src="./assets/images/kaiser.png">
-            </div>
-            <div>
-                <img src="./assets/images/anthem.png">
-            </div>
-            <div>
-                <img src="./assets/images/north-bay.png">
-            </div>
-            <div>
-                <img src="./assets/images/partnership-health.png">
-            </div>
-            <div>
-                <img src="./assets/images/aetna.png">
-            </div>
+      <div class="section__content section_partners__content">
+        <div>
+          <img src="./assets/images/magellan.png" alt="" />
         </div>
+        <div>
+          <img src="./assets/images/kaiser.png" alt="" />
+        </div>
+        <div>
+          <img src="./assets/images/anthem.png" alt="" />
+        </div>
+        <div>
+          <img src="./assets/images/north-bay.png" alt="" />
+        </div>
+        <div>
+          <img
+            src="./assets/images/partnership-health.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img src="./assets/images/aetna.png" alt="" />
+        </div>
+      </div>
     </section>
     <section class="section section_age">
-        <div class="section__content">
-            <h2 class="title">Support For People Of All Walks of Life</h2>
-            <p class="description">Children as young as 2 years old may begin to develop behaviors which need extra support and attention.</p>
-            <img src="./assets/images/Vector Smart Object.svg"></img>
-        </div>
+      <div class="section__content">
+        <h2 class="title">Support For People Of All Walks of Life</h2>
+        <p class="description">
+          Children as young as 2 years old may begin to develop behaviors which
+          need extra support and attention.
+        </p>
+        <img class="age-img" src="./assets/images/age-smart.svg" alt="" />
+      </div>
     </section>
     <section class="section section_contact">
-        <div class="section__content">
-            <h2>McGrew Behavior Services Helps...</h2>
-            <p class="desctiption desctiption_contact">Families, organizations and health care providers in Northern California. Our knowledge and experience provide the specialized support people need when overcoming behavioral challenges. </p>
-            <button class="btn">Contact us</button>
-        </div>
+      <div class="section__content">
+        <h2>McGrew Behavior Services Helps...</h2>
+        <p class="desctiption desctiption_contact">
+          Families, organizations and health care providers in Northern
+          California. Our knowledge and experience provide the specialized
+          support people need when overcoming behavioral challenges.
+        </p>
+        <button class="btn">Contact us</button>
+      </div>
     </section>
     <section class="section section_support">
-        <div class="section__content support">
-            <img src="./assets/images/overlay-carousel.png"></img>
-            <div class="support__carousel">
-                Carousel
-            </div>
+      <div class="section__content support">
+        <img src="./assets/images/overlay-carousel.png" alt="" />
+        <div class="support__carousel">
+          <div
+            class="fotorama"
+            data-autoplay="true"
+            data-arrows="false"
+            data-loop="true"
+          >
+            <img src="./assets/images/slide.png" alt="" />
+            <img src="./assets/images/slide.png" alt="" />
+          </div>
         </div>
+      </div>
     </section>
     <section class="section section_team">
-        <div class="section__content team">
-            <div class="team__one">
-                <img src="./assets/images/team.png" alt="">
-            </div>
-            <div class="team__two">
-                <p class="description">Be a part of something bigger than yourself. Make a difference.</p>
-                <h2 class="title">Join Our Team.</h2>
-                <p class="description">We are always looking for highly motivated individuals who aligned with our committment to making a difference in the lives of other people. Whether you’re a BCBA or interested in ABA work we are interested in talking to you!</p>
-                <button class="btn btn_blue">FIND WHAT’S AVAILABLE</button>
-            </div>
+      <div class="section__content team">
+        <div class="team__one team_parts"></div>
+        <div class="team__two team_parts">
+          <p class="desctiption  team_desctiption-italic">
+            Be a part of something bigger than yourself. Make a difference.
+          </p>
+          <h2 class="title title_team">
+            Join Our
+            <span class="title_botton-line active-blue-line">Team.</span>
+          </h2>
+          <p class="desctiption team_desctiption">
+            We are always looking for highly motivated individuals who aligned
+            with our committment to making a difference in the lives of other
+            people. Whether you’re a BCBA or interested in ABA work we are
+            interested in talking to you!
+          </p>
+          <button class="btn btn_blue">FIND WHAT’S AVAILABLE</button>
         </div>
+      </div>
     </section>
-
-</html><script type="text/javascript" src="./vendors~index.chunkhash.js"></script><script type="text/javascript" src="./index.js"></script>
+    <footer class="section footer">
+      <div class="footer__line">
+        <div class="section__content">
+          <ul class="global-nav__items">
+            <li class="global-nav__item">
+              <a
+                class="global-nav__link footer-link"
+                href="https://www.google.com.ua/"
+                >Home</a
+              >
+            </li>
+            <li class="global-nav__item footer__link">
+              <a
+                class="global-nav__link footer-link"
+                href="https://www.google.com.ua/"
+                >About us</a
+              >
+            </li>
+            <li class="global-nav__item">
+              <a
+                class="global-nav__link footer-link"
+                href="https://www.google.com.ua/"
+                >Contact</a
+              >
+            </li>
+            <li class="global-nav__item">
+              <a
+                class="global-nav__link footer-link"
+                href="https://www.google.com.ua/"
+                >Careers</a
+              >
+            </li>
+          </ul>
+          <div class="footer__rectangle">
+            <img src="./assets/images/rectangle.png" alt="" />
+            <img src="./assets/images/rectangle.png" alt="" />
+            <img src="./assets/images/rectangle.png" alt="" />
+          </div>
+          <address class="footer__address">
+            120 Theresa Ave, American Canyon, CA 9450
+            <div>
+              <a class="footer__phone" href="tel:707.561.0134">707.561.0134</a>
+            </div>
+            <div>
+              <a class="footer__email" href="mailto:familyresources@mbisinc.com"
+                >familyresources@mbisinc.com</a
+              >
+            </div>
+          </address>
+          <div class="copyright">
+            <p>
+              Copyright Ⓒ 2017 McGrews Behavior Services All Rights Reserved
+            </p>
+          </div>
+        </120>
+      </div>
+    </footer>
+    <script>
+      $(".fotorama").fotorama({
+        nav: "false"
+      });
+    </script>
+  <script type="text/javascript" src="./vendors~index.chunkhash.js"></script><script type="text/javascript" src="./index.js"></script></body>
+</html>
