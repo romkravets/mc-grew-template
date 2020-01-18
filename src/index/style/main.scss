@@ -80,18 +80,15 @@
   padding: 0 1rem;
   z-index: 2;
   &__content {
-    // display: -ms-flexbox;
-    // display: flex;
-    // -ms-flex-pack: center;
-    // justify-content: center;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
     max-width: 1140px;
     position: relative;
-    // display: flex;
-    // -ms-flex-direction: column;
-    // flex-direction: column;
-    // -ms-flex-align: center;
-    // align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &_header {
     background-image: url(../../assets/images/bg-header.png);
@@ -102,7 +99,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 7rem 0;
+    padding: 7rem 1rem;
   }
   &_header-content {
     display: block;
@@ -156,11 +153,22 @@
     flex-shrink: 0;
     flex-basis: 50%;
     position: relative;
+    padding: 0 2rem;
     //width: 50%;
   }
-  &__one {
+  &_desctiption {
+    margin: 2rem 0 2rem 0;
+    padding-right: 6rem;
   }
-  &__two {
+  &__one {
+    background-image: url("../../assets/images/team.png");
+    min-height: 450px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
