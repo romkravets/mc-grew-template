@@ -46,6 +46,12 @@
   }
 }
 
+.dispay-none-br {
+  @include xs-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 760px) {
   .global-nav {
     &__items {
@@ -77,7 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  padding: 0 1rem;
+  //padding: 0 1rem;
   z-index: 2;
   &__content {
     display: flex;
@@ -151,6 +157,7 @@
   flex-direction: row;
   @include tablet {
     flex-direction: column;
+    padding-bottom: 3rem;
   }
   &_parts {
     flex-grow: 0;
@@ -158,8 +165,8 @@
     flex-basis: 50%;
     position: relative;
     padding: 0 2rem;
-    //width: 50%;
     @include tablet {
+      flex-grow: 1;
       flex-shrink: 1;
       width: 100%;
       text-align: center;
@@ -171,6 +178,9 @@
   &_desctiption {
     margin: 1rem 0 2rem 0;
     padding-right: 6rem;
+    @include tablet {
+      padding: 0 2rem;
+    }
   }
   &__one {
     background-image: url("../../assets/images/team.png");
@@ -199,6 +209,9 @@
   &__rectangle {
     img {
       padding: 0 2rem;
+    }
+    @include tablet {
+      margin: 3rem 0 0 0;
     }
   }
   &__address {
@@ -240,6 +253,9 @@
 .title {
   font-size: 48px;
   font-weight: 900;
+  @include tablet {
+    font-size: 40px;
+  }
   &_botton-line {
     display: inline-block;
     line-height: 86px;
@@ -256,6 +272,9 @@
 
 .desctiption {
   line-height: 2;
+  @include tablet {
+    font-size: 14px;
+  }
   &_header {
     margin: 0 0 3rem 0;
     @include text-shadow;
